@@ -76,18 +76,70 @@ namespace AssignmentOOP2
             // there are more than one function [in different classes] these function have the same name
             // and the same signature but with different behavior
 
-            TypeB typeB = new TypeB() { A = 12, B = 13 };
+            //TypeB typeB = new TypeB() { A = 12, B = 13 };
 
             //typeB.A = 12;
             //typeB.B = 13;
 
-            Console.WriteLine(typeB.A);
-            Console.WriteLine(typeB.B);
+            //Console.WriteLine(typeB.A);
+            //Console.WriteLine(typeB.B);
 
-            typeB.Fun01();
-            typeB.Fun02();
+            //typeB.Fun01();
+            //typeB.Fun02();
 
             #endregion
+
+            #region What is Binding ?
+
+            // Binding
+            // what is binding ? 
+
+            // Reference from parent --> object child
+
+            // TypeA Ref;
+
+            // Ref = new TypeA;
+
+            // Child is a parent
+
+            // TypeB is a TypeA
+
+            //Ref = new TypeB();
+
+            //Ref.A = 12;
+
+            // Ref.B = 13;
+
+            // Ref.Fun01(); // static Binded Method
+            // Ref.Fun02(); // Dynamic Binded Method 
+
+
+            #endregion
+
+            #region Binding
+            // Binding
+            // Refparent --> ObjectChild
+
+            //TypeA Ref = new TypeA();
+
+            //Ref = new TypeB(); // Binding
+
+            //TypeB Ref = new TypeB();
+
+            //Ref = new TypeA();
+
+            // child is a Parent
+
+            // Animal --> Dog : Dog is an Animal
+            // Dod --> (Dog) Animal Animal is a Dog
+
+            //TypeA Ref = new TypeA();
+            //Ref = new TypeB();
+
+            //TypeB typeB = (TypeB) Ref; // Not Binding
+
+            #endregion
+
 
         }
     }
