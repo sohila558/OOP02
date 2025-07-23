@@ -54,7 +54,16 @@ namespace AssignmentOOP2
 
             // Console.WriteLine();
 
+            // 3.2. Polymorphism Methods (Functions) Overriding
+
+
+            #endregion
+
+
+            #region 3.1. Polymorphism Methods (Functions) Overloading
+
             // 3.1. Polymorphism Methods (Functions) Overloading
+
             // there is are more than one function(in the same scope [class - struct])
             // these function have the same name but with different signature
             // (count - type - order) parameters
@@ -62,7 +71,7 @@ namespace AssignmentOOP2
             // sum(1, 2);
             // sum(1.3, 1.4);
 
-            //sum(1.3, 3.4); 
+            //sum(1.3, 3.4);  
             #endregion
 
         }
