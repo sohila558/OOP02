@@ -1,4 +1,5 @@
-﻿using AssignmentOOP2.Inheritance;
+﻿using AssignmentOOP2.Binding;
+using AssignmentOOP2.Inheritance;
 using AssignmentOOP2.Overriding;
 
 namespace AssignmentOOP2
@@ -24,6 +25,34 @@ namespace AssignmentOOP2
         //{
         //    return x + y;
         //}
+
+
+        //static void EmployyProcess(FullTimeEmployee employee)
+        //{
+        //    if(employee is not null)
+        //    {
+        //        employee.Fun01();
+        //        employee.Fun02();
+        //    }
+        //}
+        //static void EmployyProcess(PartTimeEmployee employee)
+        //{
+        //    if (employee is not null)
+        //    {
+        //        employee.Fun01();
+        //        employee.Fun02();
+        //    }
+        //}
+
+        //static void EmployyProcess(Employee employee)
+        //{
+        //    if (employee is not null)
+        //    {
+        //        employee.Fun01();
+        //        employee.Fun02();
+        //    }
+        //}
+
 
 
         static void Main(string[] args)
@@ -140,7 +169,32 @@ namespace AssignmentOOP2
 
             #endregion
 
+            #region When You need Binding ?
+            // When You need Binding ? 
 
+            // FullTimeEmployee : Id / Name / Salary / Address / Email
+
+            //FullTimeEmployee fullTime = new FullTimeEmployee()
+            //{
+            //    Id = 1,
+            //    Name = "Ahmed",
+            //    Email = "Ahmed@g.c",
+            //    Address = "Cairo",
+            //    Salary = 12000
+            //};
+
+            // PartTimeEmployee : Id / Name / Address / Email / HourRate / NumberofHours
+
+            //PartTimeEmployee partTime = new PartTimeEmployee()
+            //{
+            //    HourRate = 300,
+            //    NumberOfHours = 200
+            //};
+
+            //EmployyProcess(partTime);
+
+            //EmployyProcess(fullTime); 
+            #endregion
         }
     }
 }
