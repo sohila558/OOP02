@@ -195,6 +195,26 @@ namespace AssignmentOOP2
 
             //EmployyProcess(fullTime); 
             #endregion
+
+            #region Binding Example
+            //TypeA typeA;
+
+            //typeA = new TypeA();
+            //typeA = new TypeB(); // TypeA is a parent of TypeB
+            //typeA = new TypeC(); // TypeA is an indirect Parent of TypeC
+            //typeA = new TypeD(); // TypeA is an indirect Parent of TypeD
+
+            //typeA.A = 12;
+            //typeA.B = 12;
+            //typeA.C = 12;
+            //typeA.D = 12;
+
+
+            //typeA.Fun01();
+            //typeA.Fun02(); 
+            #endregion
+
+
         }
     }
 }
