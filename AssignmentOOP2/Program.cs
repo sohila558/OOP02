@@ -1,10 +1,220 @@
-﻿namespace AssignmentOOP2
+﻿using AssignmentOOP2.Binding;
+using AssignmentOOP2.Inheritance;
+using AssignmentOOP2.Overriding;
+
+namespace AssignmentOOP2
 {
     internal class Program
     {
+        //static int sum(int x, int y, int z)
+        //{
+        //    return x + y;
+        //}
+
+        //static int sum(int x, int y)
+        //{
+        //    return x + y;
+        //}
+
+        //static double sum(double x, int y)
+        //{
+        //    return x + y;
+        //}
+
+        //static double sum(double x, double y)
+        //{
+        //    return x + y;
+        //}
+
+
+        //static void EmployyProcess(FullTimeEmployee employee)
+        //{
+        //    if(employee is not null)
+        //    {
+        //        employee.Fun01();
+        //        employee.Fun02();
+        //    }
+        //}
+        //static void EmployyProcess(PartTimeEmployee employee)
+        //{
+        //    if (employee is not null)
+        //    {
+        //        employee.Fun01();
+        //        employee.Fun02();
+        //    }
+        //}
+
+        //static void EmployyProcess(Employee employee)
+        //{
+        //    if (employee is not null)
+        //    {
+        //        employee.Fun01();
+        //        employee.Fun02();
+        //    }
+        //}
+
+
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            #region Inheritance
+            // 2. Inheritance : 
+            // X --> Y
+            // DRY
+
+
+            //Parent parent = new Parent(1, 2);
+
+            // Console.WriteLine(parent);
+
+            //parent.Fun01();
+            //parent.Fun02();
+
+            //Child child = new Child(1, 2, 3);
+
+            //child.Fun01();
+            //child.Fun02(); 
+            #endregion
+
+            #region Polymorphism
+            // 3. Polymorphism
+            // 3.1. Polymorphism Methods (Functions) Overloading
+            // 3.2. Polymorphism Methods (Functions) Overriding
+
+
+            // Console.WriteLine();
+
+            #endregion
+
+            #region 3.1. Polymorphism Methods (Functions) Overloading
+
+            // 3.1. Polymorphism Methods (Functions) Overloading
+
+            // there is are more than one function(in the same scope [class - struct])
+            // these function have the same name but with different signature
+            // (count - type - order) parameters
+
+            // sum(1, 2);
+            // sum(1.3, 1.4);
+
+            //sum(1.3, 3.4);  
+            #endregion
+
+            #region 3.2. Polymorphism Methods (Functions) Overriding
+
+            // there are more than one function [in different classes] these function have the same name
+            // and the same signature but with different behavior
+
+            //TypeB typeB = new TypeB() { A = 12, B = 13 };
+
+            //typeB.A = 12;
+            //typeB.B = 13;
+
+            //Console.WriteLine(typeB.A);
+            //Console.WriteLine(typeB.B);
+
+            //typeB.Fun01();
+            //typeB.Fun02();
+
+            #endregion
+
+            #region What is Binding ?
+
+            // Binding
+            // what is binding ? 
+
+            // Reference from parent --> object child
+
+            // TypeA Ref;
+
+            // Ref = new TypeA;
+
+            // Child is a parent
+
+            // TypeB is a TypeA
+
+            //Ref = new TypeB();
+
+            //Ref.A = 12;
+
+            // Ref.B = 13;
+
+            // Ref.Fun01(); // static Binded Method
+            // Ref.Fun02(); // Dynamic Binded Method 
+
+
+            #endregion
+
+            #region Binding
+            // Binding
+            // Refparent --> ObjectChild
+
+            //TypeA Ref = new TypeA();
+
+            //Ref = new TypeB(); // Binding
+
+            //TypeB Ref = new TypeB();
+
+            //Ref = new TypeA();
+
+            // child is a Parent
+
+            // Animal --> Dog : Dog is an Animal
+            // Dod --> (Dog) Animal Animal is a Dog
+
+            //TypeA Ref = new TypeA();
+            //Ref = new TypeB();
+
+            //TypeB typeB = (TypeB) Ref; // Not Binding
+
+            #endregion
+
+            #region When You need Binding ?
+            // When You need Binding ? 
+
+            // FullTimeEmployee : Id / Name / Salary / Address / Email
+
+            //FullTimeEmployee fullTime = new FullTimeEmployee()
+            //{
+            //    Id = 1,
+            //    Name = "Ahmed",
+            //    Email = "Ahmed@g.c",
+            //    Address = "Cairo",
+            //    Salary = 12000
+            //};
+
+            // PartTimeEmployee : Id / Name / Address / Email / HourRate / NumberofHours
+
+            //PartTimeEmployee partTime = new PartTimeEmployee()
+            //{
+            //    HourRate = 300,
+            //    NumberOfHours = 200
+            //};
+
+            //EmployyProcess(partTime);
+
+            //EmployyProcess(fullTime); 
+            #endregion
+
+            #region Binding Example
+            //TypeA typeA;
+
+            //typeA = new TypeA();
+            //typeA = new TypeB(); // TypeA is a parent of TypeB
+            //typeA = new TypeC(); // TypeA is an indirect Parent of TypeC
+            //typeA = new TypeD(); // TypeA is an indirect Parent of TypeD
+
+            //typeA.A = 12;
+            //typeA.B = 12;
+            //typeA.C = 12;
+            //typeA.D = 12;
+
+
+            //typeA.Fun01();
+            //typeA.Fun02(); 
+            #endregion
+
+
         }
     }
 }
