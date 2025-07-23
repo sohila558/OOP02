@@ -1,4 +1,5 @@
 ﻿using AssignmentOOP2.Inheritance;
+using AssignmentOOP2.Overriding;
 
 namespace AssignmentOOP2
 {
@@ -54,11 +55,7 @@ namespace AssignmentOOP2
 
             // Console.WriteLine();
 
-            // 3.2. Polymorphism Methods (Functions) Overriding
-
-
             #endregion
-
 
             #region 3.1. Polymorphism Methods (Functions) Overloading
 
@@ -72,6 +69,24 @@ namespace AssignmentOOP2
             // sum(1.3, 1.4);
 
             //sum(1.3, 3.4);  
+            #endregion
+
+            #region 3.2. Polymorphism Methods (Functions) Overriding
+
+            // there are more than one function [in different classes] these function have the same name
+            // and the same signature but with different behavior
+
+            TypeB typeB = new TypeB() { A = 12, B = 13 };
+
+            //typeB.A = 12;
+            //typeB.B = 13;
+
+            Console.WriteLine(typeB.A);
+            Console.WriteLine(typeB.B);
+
+            typeB.Fun01();
+            typeB.Fun02();
+
             #endregion
 
         }
